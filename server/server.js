@@ -558,21 +558,21 @@ const transporter = nodemailer.createTransport({
       <head>
         <style>
           body { font-family: Arial, sans-serif; }
-          .container { background-color: #FFFFFF; border: 1px solid #3AA8C1; border-radius: 4px; padding: 16px; color: #5C667E; }
+          .section { @media (min-width: 768px) { align-self: center; width: 75%;}
           .header { text-align: center; font-size: 24px; }
           .content { margin: 16px 0; }
           .footer { text-align: center; margin-top: 32px; }
         </style>
       </head>
-      <body style="margin-top: 2rem; font-family: Arial, sans-serif; font-size: 24px; width: 75%; margin: auto; text-align: start;">
+      <body style="margin-top: 2rem; font-family: Arial, sans-serif; font-size: 24px;  margin: auto; text-align: start;">
         <section style="margin: 2rem; background-color: #FFFFFF;padding: 16px; color: #5C667E;">
           <div class="heading" style="padding-bottom: 1rem;">Hi ${first_name},</div>
           <div class="top" style="padding-bottom: 1rem;">
             Thank you for contacting us regarding your reservation. We would like to confirm that your reservation for
             ${
               service === "boarding"
-                ? `${service} for ${pet_name} from ${startD} to ${endD} has been canceled.`
-                : `${service} for ${pet_name} from ${startD} at ${startT} to ${endT}  has been canceled.`
+                ? `${service} for ${pet_name} on ${startD} to ${endD} has been canceled.`
+                : `${service} for ${pet_name} on ${startD} at ${startT}  has been canceled.`
             }
           </div>
           <div class="top" style="padding-bottom: 1rem;  color: #5C667E;"">
