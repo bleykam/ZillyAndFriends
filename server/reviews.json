@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "stars": 5,
+    "name": "Frank A.",
+    "body": "Was absolutely amazing with my pup. Thank you so much for looking after him!",
+    "via": "Rover.com",
+    "created_at": "Oct 10, 2023",
+    "repeat": true
+  },
+  {
+    "id": 2,
+    "stars": 5,
+    "name": "Molly K.",
+    "body": "Brittany is a true gift to my dog. Im so grateful for her attention and patience!",
+    "via": "Rover.com",
+    "created_at": "Oct 5, 2023",
+    "repeat": true
+  },
+  {
+    "id": 10,
+    "stars": 5,
+    "name": "Molly K.",
+    "body": "Brittany is kind and careful. Highly recommend!",
+    "via": "Rover.com",
+    "created_at": "Sept 25, 2023",
+    "repeat": true
+  },
+  {
+    "id": 7,
+    "stars": 5,
+    "name": "Athena S.",
+    "body": "Brittany is fantastic! Professional & responsive - she took great care of my senior dog & I hope to use her services again in the future. Thank you Brittany!",
+    "via": "Rover.com",
+    "created_at": "Sept 24, 2023",
+    "repeat": true
+  },
+  {
+    "id": 9,
+    "stars": 5,
+    "name": "Gina V.",
+    "body": "Brittany was wonderful and my elderly pup really enjoyed being with her. She was very conscientious and caring. I will work with Brittany again.",
+    "via": "Rover.com",
+    "created_at": "Sept 24, 2023",
+    "repeat": false
+  },
+  {
+    "id": 11,
+    "stars": 5,
+    "name": "Nicole s.",
+    "body": "My dog, Nori, always has the greatest time at Brittany’s place. I love how Nori treats Brittany’s apartment as her second home and never gets homesick/lonely/bored when I’m away.",
+    "via": "Rover.com",
+    "created_at": "Sept 8, 2023",
+    "repeat": true
+  },
+  {
+    "id": 17,
+    "stars": 5,
+    "name": "Jane P.",
+    "body": "Brittany easily bonded with my quirky dog.  Will book with her again",
+    "via": "Rover.com",
+    "created_at": "Sept 2, 2023",
+    "repeat": true
+  },
+  {
+    "id": 13,
+    "stars": 5,
+    "name": "Natalie W.",
+    "body": "Brittany was great! Lots of pictures and the pups clearly enjoyed themselves!!!!",
+    "via": "Rover.com",
+    "created_at": "Aug 28, 2023",
+    "repeat": false
+  },
+  {
+    "id": 6,
+    "stars": 5,
+    "name": "Melissa T.",
+    "body": "We are so grateful Brittany was able to watch our dog Milo for 6 days while we were away. She sent photos of him and updates which we appreciated and was flexible with drop off and pick up times. Thank you!!",
+    "via": "Rover.com",
+    "created_at": "Aug 27, 2023",
+    "repeat": false
+  },
+  {
+    "id": 14,
+    "stars": 5,
+    "name": "Dana G.",
+    "body": "Brittany was very patient with my nervous chihuahua and also very flexible with pick up and drop off times. Clear communication throughout. Would highly recommend. Thank you Brittany!",
+    "via": "Rover.com",
+    "created_at": "Aug 20, 2023",
+    "repeat": false
+  },
+  {
+    "id": 5,
+    "stars": 5,
+    "name": "Laura Y.",
+    "body": "Five Stars +++ ⭐️⭐️⭐️⭐️⭐️✅⭐️ Brittany and her sidekick Goliath took great care of my mini schnauzer. It was the first time I had left my pup since before Covid and I am so happy to have met Brittany. I will now feel more comfortable taking breaks for myself because of Brittany. Very easy to communicate with and very kind.",
+    "via": "Rover.com",
+    "created_at": "Aug 12, 2023",
+    "repeat": false
+  },
+  {
+    "id": 16,
+    "stars": 5,
+    "name": "Radhika K.",
+    "body": "Brittany is simply amazing. She was dog sitting my dog for 3 days as I was out of town. She always kept me updated on how Arlo is doing and also sent his pictures everyday. She was extremely flexible with timings too. He had so much fun at her place and was so sad when his little vacation was over :) would definitely recommend her to anyone looking for a sitter.",
+    "via": "Rover.com",
+    "created_at": "Aug 4, 2023",
+    "repeat": true
+  },
+  {
+    "id": 3,
+    "stars": 5,
+    "name": "Anna C.",
+    "body": "Brittany watched my dog for a whole weekend. It was his first time with a sitter so he was a little nervous and she took great care of him!",
+    "via": "Rover.com",
+    "created_at": "July 31, 2023",
+    "repeat": true
+  },
+  {
+    "id": 12,
+    "stars": 5,
+    "name": "Warren S.",
+    "body": "Incredible dog sitter!",
+    "via": "Rover.com",
+    "created_at": "July 30, 2023",
+    "repeat": true
+  },
+  {
+    "id": 18,
+    "stars": 5,
+    "name": "Ksenia C.",
+    "body": "Great communication, friendly and flexible with schedule.  My Lulu enjoyed staying at Brittany’s place. Came back happy and energetic.Highly recommend!!",
+    "via": "Rover.com",
+    "created_at": "July 24, 2023",
+    "repeat": false
+  },
+  {
+    "id": 8,
+    "stars": 5,
+    "name": "Karin P.",
+    "body": "Great communication and pretty flexible about pickup and drop off. My pup was happy and comfortable the whole time!",
+    "via": "Rover.com",
+    "created_at": "July 20, 2023",
+    "repeat": false
+  },
+  {
+    "id": 4,
+    "stars": 5,
+    "name": "Connie S.",
+    "body": "Great sitter and timely communication! Friendly and flexible professional!",
+    "via": "Rover.com",
+    "created_at": "June 18, 2023",
+    "repeat": false
+  },
+  {
+    "id": 15,
+    "stars": 5,
+    "name": "Victor L.",
+    "body": "Brittany was excellent with my pup. My pup can be a handful at times which nervous energy but Brittany held fast and took it all in stride. Would definitely use her services again.",
+    "via": "Rover.com",
+    "created_at": "Mar 3, 2023",
+    "repeat": true
+  },
+  {
+    "id": "5d4f1832-aa29-4b64-869c-858163f2245e",
+    "stars": 5,
+    "name": "Molly K.",
+    "body": "Brittany is a true gift to my dog. Im so grateful for her attention and patience!",
+    "via": "Godzilla & Friends",
+    "created_at": "11/9/2023",
+    "repeat": true
+  },
+  {
+    "id": "217c5e70-7629-4eaa-b227-35a609f5c208",
+    "stars": 5,
+    "name": "Sam W. ",
+    "body": "Highly recommended, my guy had the time of his life, it was puppy paradise for him. Thank You!",
+    "via": "Godzilla & Friends",
+    "created_at": "11/9/2023",
+    "repeat": "false"
+  }
+]

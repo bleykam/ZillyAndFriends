@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    
+
+        .container {
+            background-color: #FFFFFF;
+            border: 1px solid #3AA8C1;
+            border-radius: 4px;
+            padding: 16px;
+            color: #5C667E;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .content {
+            margin: 16px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 32px;
+        }
+    </style>
+</head>
+
+<body style="margin-top: 2rem; font-family: Arial, sans-serif; font-size: 24px; width: 75%; margin: auto; text-align: start;">
+    <section style="margin: 2rem; background-color: #FFFFFF; border: 1px solid #3AA8C1; border-radius: 4px; padding: 16px; color: #5C667E;">
+
+    <div class="heading" style=" padding-bottom: 1rem;">Hi ${first_name},</div>
+
+    <div class="top" style="padding-bottom: 1rem;">
+        Thank you for contacting us regarding your reservation. We would like to confirm that your reservation for
+        ${
+        service === "boarding"
+        ? ${service} for ${pet_name} from ${startDate} to ${endDate} has been canceled. 
+        : ${service} for ${pet_name} from ${startDate} at ${startTime} to ${endTime} has been canceled.
+        }
+    </div>
+
+    <div class="top" style="padding-bottom: 1rem;">
+        If you have paid for your reservation, a refund will be processed within 48 hours through the same payment
+        method you used for the transaction.
+    </div>
+</section> 
+    <div class="salutation" style"margin: 3rem;">
+        <div class="sal-info">🐾 Paw-sitively Yours! </div>
+        <div class="sal-info"> Zilly &amp; Friends </div>
+    </div>
+</body>
+
+</html>
