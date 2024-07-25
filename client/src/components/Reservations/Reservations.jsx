@@ -4,7 +4,7 @@ import { Container, Button, Row, Col, Tab, Tabs} from 'react-bootstrap';
 import { useAuth } from '../../AuthContext';
 import { ReservationCard } from "../ReservationCard/ReservationCard";
 
-export default function Reservations({bookings, handleTabChange}) {
+export default function Reservations({bookings, profiles, handleTabChange}) {
   const { user, setUser } = useAuth();
 
     return (
@@ -19,7 +19,7 @@ export default function Reservations({bookings, handleTabChange}) {
             <Tab eventKey="pending" title="Pending">
             <Row>
                 <Col>
-                  <ReservationCard bookings={bookings}  handleTabChange={handleTabChange} timeFrame={"pending"} />
+                  <ReservationCard bookings={bookings}  profiles={profiles}  handleTabChange={handleTabChange} timeFrame={"pending"} />
                 </Col>
               </Row>
             </Tab>
@@ -27,7 +27,7 @@ export default function Reservations({bookings, handleTabChange}) {
             <Tab eventKey="current" title="Current">
               <Row>
                 <Col>
-                  <ReservationCard bookings={bookings} timeFrame={"current"} handleTabChange={handleTabChange}/>
+                  <ReservationCard bookings={bookings} timeFrame={"current"} profiles={profiles} handleTabChange={handleTabChange}/>
                 </Col>
               </Row>
             </Tab>
@@ -35,7 +35,7 @@ export default function Reservations({bookings, handleTabChange}) {
             <Tab eventKey="upcoming" title="Upcoming">
             <Row>
                 <Col>
-                  <ReservationCard bookings={bookings} timeFrame={"upcoming"} />
+                <ReservationCard bookings={bookings} profiles={profiles} handleTabChange={handleTabChange} timeFrame={"upcoming"} />
                 </Col>
               </Row>
             </Tab>
@@ -43,7 +43,7 @@ export default function Reservations({bookings, handleTabChange}) {
             <Tab eventKey="past" title="Past">
             <Row>
                 <Col>
-                  <ReservationCard bookings={bookings} timeFrame={"past"} />
+                <ReservationCard bookings={bookings} timeFrame={"past"} profiles={profiles} handleTabChange={handleTabChange} />
                 </Col>
               </Row>
              

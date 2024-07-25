@@ -8,12 +8,12 @@ import { useNavigate } from 'react-router-dom';
 import dogWithBone from '../../assets/dogwithbone.png';
 
 
-export function ReservationCard({ bookings, timeFrame }) {
+export function ReservationCard({ bookings, timeFrame, profiles }) {
     const { user, setUser } = useAuth();
     const userId = user?.id;
     const navigate = useNavigate(); // Add useNavigate hook
     const [cardBookings, setCardBookings] = useState([]);
-console.log("adminEmail",adminEmail)
+
     useEffect(() => {
         let filterBookings;
         if (timeFrame === "upcoming") {
@@ -39,9 +39,7 @@ console.log("adminEmail",adminEmail)
         // biome-ignore lint/style/useConst: <explanation>
         let form = {
             admin_email: adminEmail,
-            full_name: booking.full_name,
-            first_name: booking.first_name,
-            last_name: booking.last_name,
+            first_name: profiles.first_name,
             pet_name: booking.pets_selected,
             service: booking.service,
             start_date: booking.start_date,
@@ -51,7 +49,6 @@ console.log("adminEmail",adminEmail)
             ...(booking.service === "boarding" ? { end_date: booking.end_date } : {}),
             status: status,
             user_email: user?.email,
-
             total: booking.tot_amt,
         };
 

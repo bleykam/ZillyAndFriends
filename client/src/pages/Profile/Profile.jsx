@@ -29,22 +29,7 @@ export default function Profile() {
     navigate('/');
   };
 
-  const handlePassword = async (e) => {
-    e.preventDefault();
 
-  }
-  useEffect(() => {
-    supabase.auth.onAuthStateChange(async (event, session) => {
-      if (event === "PASSWORD_RECOVERY") {
-        const newPassword = prompt("What would you like your new password to be?");
-        const { data, error } = await supabase.auth
-          .updateUser({ password: newPassword })
-
-        if (data) alert("Password updated successfully!")
-        if (error) alert("There was an error updating your password.")
-      }
-    })
-  }, [])
 
 
   useEffect(() => {
@@ -253,7 +238,7 @@ export default function Profile() {
                   <PetComponent userId={userId} pets={pets} />
                 </Tab.Pane>
                 <Tab.Pane eventKey="reservations">
-                  <Reservations pets={pets} bookings={bookings} />
+                  <Reservations profiles={profiles} pets={pets} bookings={bookings} />
                 </Tab.Pane>
                 <Tab.Pane eventKey="messages">
                   <Messaging senderEmail={profiles.email} sender={profiles.full_name} userId={user?.id} otherUserId={adminId} recipientEmail={adminEmail} bookingId={bookingId} />

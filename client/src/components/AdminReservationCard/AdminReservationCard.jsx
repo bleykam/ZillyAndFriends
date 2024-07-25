@@ -78,7 +78,7 @@ export default function AdminReservationCard({ bookings, timeFrame }) {
             .eq("id", booking.id)
             .select();
         sendConfEmail(form);
-        console.log("Form2", form);
+      
         alert("Booking request changed");
     };
 
@@ -150,7 +150,9 @@ export default function AdminReservationCard({ bookings, timeFrame }) {
 
    function bookingRange(booking){
         if (booking.service === "Boarding") {
+            // biome-ignore lint/style/useConst: <explanation>
             let start_date = new Date(booking.start_date);
+            // biome-ignore lint/style/useConst: <explanation>
             let end_date = new Date(booking.end_date);
 
       

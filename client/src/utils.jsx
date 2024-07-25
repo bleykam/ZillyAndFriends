@@ -26,7 +26,7 @@ export function sendBookingEmail(form) {
 }
 
 export function sendCancelEmail(form) {
-	axios.post("https://pet-ltzb.onrender.com/api/send-booking-email", form)
+	axios.post("http://localhost:8888/api/send-cancel-email", form)
 		.catch(error => console.log(error))
 }
 export const paypalClientId=import.meta.env.VITE_PAYPAL_RESTAPI_CLIENT_ID
