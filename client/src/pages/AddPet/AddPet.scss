@@ -1,0 +1,10 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+
+.add-pet {
+    @include mixins.tablet {
+        max-width: 60%;
+    }
+
+}

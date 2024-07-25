@@ -1,0 +1,164 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+
+.about {
+    display: flex;
+    flex-direction: column;
+    color: colors.$secondary-slate;
+    font-family: fonts.$primary-font-heading;
+
+    @include mixins.tablet {
+        padding: 0 2.25rem;
+        align-items: center;
+    }
+ 
+    &__title{
+      color: colors.$secondary-slate;
+      font-family: fonts.$primary-font-heading;
+      margin: 0 auto;
+        padding: 1rem;
+        font-size: 0.75rem;
+        @include mixins.tablet{
+            font-size: 1rem;
+        }
+    }
+    &__words {
+        margin: 0.5rem;
+        line-height: 2;
+    }
+    &__link{
+        text-decoration: none;
+        color: colors.$secondary-slate;
+    }
+
+
+    &__image-sec {
+        display: flex;
+        flex-direction: column;
+        @include mixins.tablet {
+            display: flex;
+        }
+        @include mixins.desktop{
+            padding: 0 5rem;
+
+        }
+    }
+
+    &__pup-image-div {
+        display: flex;
+        justify-content: center;
+        background-color: colors.$photo-background;
+        @include mixins.tablet {
+            display: none;
+        }
+    }
+    &__pup-image-mobile {
+        width: 100%;
+        @include mixins.tablet {
+            display: none;
+        }
+    }
+
+    &__pup-image {
+        display: none;
+        @include mixins.tablet {
+            display: flex;
+            margin: 1rem;
+        }
+    }
+    &__bullet-list{
+        padding: 1rem;
+    }
+
+    &__bullets {
+        margin-left: 1rem;
+        padding: 0 1rem;
+        line-height: 2;
+    }
+
+    &__bullets::marker {
+        content: "🐾";
+        margin-right: 1.5rem;
+    }
+
+    &__right{
+        margin-top: 1rem;
+        padding: 1rem;
+        display:flex;
+        align-items: center;
+        box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+    }
+    &__left{
+        padding: 1rem;
+        display:flex;
+        align-items: center;
+        box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+        margin-top: 1rem;
+       
+    }
+
+    &__image-left-top{
+        display: none;
+        @include mixins.tablet {
+            display: initial;
+            height:12rem;
+            width:12rem;
+            border-radius: .15rem;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        }
+        @include mixins.desktop{
+            height:17rem;
+            width:17rem;
+
+        }
+
+    }
+    &__image-right-top{
+        display: none;
+        @include mixins.tablet {
+            display: initial;
+            height:12rem;
+            width:12rem;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+           
+        }
+        @include mixins.desktop{
+            height:17rem;
+            width:17rem;
+
+        }
+
+    }
+    &__image-div{
+        display: none;
+        @include mixins.tablet {
+            display: flex;
+            justify-content: center;
+            width:30%;
+            margin: 0.75rem;
+          
+        }
+    }
+    &__image-div-right{
+        display: none;
+        @include mixins.tablet {
+            display: flex;
+            justify-content: center;
+            width:30%;
+            margin: 0.75rem;
+        }
+    }
+
+    &__card-left{
+        @include mixins.tablet{
+            width: 70%;
+        }
+
+    }
+&__card-right{
+        @include mixins.tablet{
+            width: 70%;
+        }
+    }
+}

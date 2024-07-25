@@ -1,0 +1,11 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+
+.admin-bookings{
+font: fonts.$primary-font-heading;
+color: colors.$primary-label;
+    
+}
+
+body{margin-top:20px;}     

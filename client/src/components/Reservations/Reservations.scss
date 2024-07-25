@@ -1,0 +1,12 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+
+
+.small-group{
+    display: none;
+    
+    @include mixins.small {
+        display: initial;
+    }
+}

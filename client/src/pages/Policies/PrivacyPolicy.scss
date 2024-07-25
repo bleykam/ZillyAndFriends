@@ -1,0 +1,38 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+
+.privacy-policy{
+    padding: 1rem;
+    @include mixins.tablet{
+        width: 70%;
+        margin: 0 auto;
+    }
+    &__header{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__title{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+
+    }
+    &__sub-title{
+        margin-bottom: 1rem;
+    }
+    &__body{
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+    &__list{
+        margin-bottom: 1rem;
+        
+
+    }
+    &__item{
+        margin-left:2rem;
+        list-style:outside;
+
+    }
+}

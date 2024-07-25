@@ -1,0 +1,81 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    font-family: fonts.$primary-font-heading;
+    @include mixins.tablet{
+        padding: 5rem;
+    }
+    @include mixins.desktop{
+        margin: 0 auto;
+        width: 75vw;
+    }
+    &__heading{
+        text-align: center;
+        padding: 1rem;
+        color: colors.$primary-purple;
+    }
+    &__label{
+        display: inline-block;
+        color:colors.$primary-label;
+        width: 10rem;
+    }
+    &__text{
+        display: inline-block;
+    }
+    &__total{
+        padding-left: 1rem;
+    }
+    &__details{
+        border: 2px solid colors.$primary-border;
+        background-color: colors.$primary-white;
+    }
+    &__service{
+        color: colors.$primary-body-text;
+        padding: 1rem;
+    }
+    &__payment{
+        text-align: end;
+        padding: 1rem;
+        color: colors.$primary-purple;
+    }
+    &__message{
+        padding: 1rem;
+        color: colors.$secondary-slate;
+        text-align: center;
+    }
+    &__buttons{
+        margin: 1rem auto;
+        @include mixins.tablet{
+            margin:1rem 0;
+            align-self: self-end;
+        }
+    }
+    &__terms{
+        font-size:0.75rem;
+        text-align: center;
+        @include mixins.tablet{
+            font-size: 1rem;
+        }
+    }
+}
+
+.paylater-button{
+    display: flex;
+    align-self: center;
+    margin-top: 1rem;
+    @include mixins.booking-button;
+    font-weight: 700;
+    min-width: 12.5rem;
+    max-width: 18.75rem;
+    padding: 0 1rem;
+    @include mixins.tablet{
+        align-self: flex-end;
+      } 
+}
+

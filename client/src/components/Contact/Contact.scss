@@ -1,0 +1,89 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+
+
+.contact {
+	// font-family: fonts.$primary-font-heading;
+	// padding-top: 1rem;
+
+	// &__info {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	align-items: center;
+	// 	box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+	// 	@include mixins.tablet {
+	// 		padding: 1rem 2.25rem;
+	// 		margin: 0 2.25rem;
+	// 		padding-top:0;
+	// 	}
+	// 	@include mixins.desktop {
+	// 		margin: 0 7.25rem;
+	// 	}
+	// }
+	
+	&__info-title {
+		align-self: flex-start;
+		color: colors.$medium-blue;
+		font-size: 1.75rem;
+		padding: 1rem;
+		@include mixins.tablet{
+			font-size: 2rem;
+			padding: 1rem 0;
+		}
+	 }
+
+	// &__map{
+	// 	width: 100%;
+	// 	@include mixins.tablet {
+	// 		width:45%
+	// 	}
+	// }
+
+	// &__info-middle {
+	// 	display: flex;
+	// 	width: 100%;
+	// 	flex-direction: column;
+	// 	align-items: center;
+	// 	@include mixins.tablet {
+	// 		flex-direction: row;
+	// 		justify-content: space-between;
+	// 	}
+	// }
+
+	// &__info-address {
+	// 	color: colors.$primary-body-text;
+	// 	padding-left: 1rem;
+	// 	width:100%;
+	// 	font-size:0.75rem;
+	// 	flex-direction: column;
+	// 	align-items: center;
+	// 	display: flex;
+	// 	@include mixins.tablet{
+	// 		align-content: space-around;
+	// 		width: 45%;
+	// 		font-size: 1.0rem;
+	// 		font-weight: 500;
+	// 	}
+	// }
+
+	// &__link {
+	// 	text-decoration: None;
+	// 	color: colors.$primary-body-text;
+	// }
+
+	// &__info-contact {
+	// 	font-size: 1.5rem;
+	// 	font-weight: 600;
+	// }
+
+	// &__info-p {
+	// 	font-size: 1.75rem;
+	// 	line-height: 1.5;
+	// }
+	&__image{
+		height:3rem;
+		width:3rem;
+		margin: 1rem;
+	}
+}

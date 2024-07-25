@@ -1,0 +1,174 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+
+
+.loginbooking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size:1.25rem;
+    padding: 1rem;
+    color: colors.$secondary-slate;
+    font-family: fonts.$primary-font-heading;
+    @include mixins.tablet {
+      font-size: 1.5rem;
+        padding: 1rem 2.25rem;
+        
+      }
+      @include mixins.desktop {
+        padding: 1rem 5rem;
+      }
+    &__title{
+        color: colors.$primary-purple;
+        text-align: center;
+        margin: 1rem;
+    }
+    &__form{
+        width:100%;
+        font-size: 1rem;
+        @include mixins.tablet{
+            padding: 2rem; 
+            box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+        }
+    }
+    &__input{
+        @include mixins.input;
+        width: 100%;
+    }
+      
+    &__label {
+        margin-top: .5rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        @include mixins.tablet {
+          margin-top: 1rem;
+        }
+      }
+    
+    &__button{
+        @include mixins.booking-button;
+        margin: 1rem 0;
+    }
+
+    &__fee{
+      margin:0.5rem;
+    }
+
+    &__field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include mixins.tablet {
+        width: auto;
+    }
+    }
+    
+  &__textarea {
+    height: 7rem;
+  }
+  &__pets{
+    border: 1px solid colors.$primary-input-border;
+    border-radius: 0.25rem;
+    color: colors.$secondary-slate;
+    height: auto;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.2);
+    background-color: colors.$primary-white;
+   
+  }
+    
+}
+
+
+.booking-tab{
+  &__content{
+      padding-top: 1rem;
+      @include mixins.tablet{
+      border: .125rem solid colors.$primary-border;
+      border-top: none;
+      }
+   
+  }
+}
+
+.booking-button{
+  width:50%;
+  height:3rem;
+  font-family: fonts.$primary-font-heading;
+  color: colors.$primary-label;
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+  border-bottom: none;
+  background: none;
+  border-color: colors.$primary-border;
+  font-weight: 700;
+  font-size: 1.25rem;
+  @include mixins.tablet{
+      font-weight: 700;
+      font-size: 1.25rem;
+  }
+}
+
+.inActive{
+  background-color: colors.$background-color-grey;
+  border-color: colors.$background-color-grey;
+}
+
+.booking-tab{
+  &__content{
+      padding-top: 1rem;
+      @include mixins.tablet{
+      border: .125rem solid colors.$primary-border;
+      border-top: none;
+      }
+  }
+}
+
+.input-wrapper {
+  position: relative;
+  border: .125rem solid colors.$secondary-slate;
+	padding: 2rem 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+.input-wrapper-label{
+  position: absolute;
+ font-family: fonts.$primary-font-heading;
+	padding:0 .5rem;
+	margin:-3rem 0 0 0;
+	z-index: 2;
+  color: colors.$primary-label;
+  background-color: white;
+  @include mixins.tablet{
+  font-size: 1.25rem;
+  }
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+
+.react-datepicker__close-icon::after {
+cursor: pointer;
+color: colors.$primary-white;
+border-radius: 50%;
+height: 1rem;
+width: 1rem;
+padding: .125rem;
+font-size: .75rem;
+line-height: 1;
+text-align: center;
+display: table-cell;
+vertical-align: middle;
+content: "×";
+}
+
+
+.picker{
+  width: 100%
+}

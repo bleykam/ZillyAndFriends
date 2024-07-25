@@ -1,0 +1,11 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+
+.logout-button{
+    font-family: fonts.$primary-font-heading;
+    @include mixins.booking-button;
+    margin-top: 2rem;
+     
+     
+ }

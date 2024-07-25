@@ -1,0 +1,62 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+
+
+
+// .create-profile {
+//   font-family: fonts.$primary-font-heading;
+//   color: colors.$secondary-slate;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   font-weight: 400;
+//   font-size: 1.5rem;
+//   padding: 1rem;
+//   @include mixins.tablet {
+//     padding: 1rem 2.25rem;
+//   }
+//   @include mixins.desktop {
+//     padding: 1rem 5rem;
+//   }
+
+//   &__title {
+//     text-align: center;
+//     font-family: fonts.$primary-font-heading;
+//     text-shadow: 0 3px 4px #f2f2f2, 0 2px 1px #fff;
+//     color: colors.$primary-body-text;
+//     font-weight: 500;
+//     font-size: 2rem;
+//     @include mixins.tablet {
+//       font-size: 3rem;
+//       margin: 1rem;
+//     }
+//   }
+
+//   &__form {
+//     font-family: fonts.$primary-font-heading;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding: 1rem;
+//     width: 75vw;
+//     @include mixins.tablet {
+//       box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45),
+//         0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+//       padding: 1rem;
+//       margin: 1rem;
+//     }
+//   }
+
+//   &__button {
+//     width:100%;
+//     @include mixins.booking-button;
+//     margin: 2rem 0;
+//     height: 2rem;
+//     @include mixins.tablet {
+//       width:7rem;
+//     }
+//   }
+ 
+// }
+

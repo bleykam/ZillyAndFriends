@@ -1,0 +1,67 @@
+
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+
+.create{
+&__label {
+   @include mixins.label;
+  }
+  &__input {
+    border: 1px solid colors.$primary-input-border;
+    border-radius: 0.25rem;
+    color: colors.$secondary-slate;
+    height: 2.5rem;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    width:100%;
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.2);
+    @include mixins.tablet {
+      padding: 1rem;
+      height: 2rem;
+    }
+  }
+  &__select {
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+    font-size: 0.85rem;
+    background-color: colors.$primary-white;
+    color: colors.$secondary-slate;
+    cursor: pointer;
+  }
+  &__textarea {
+    height: 7rem;
+    font-size: 0.85rem;
+  }
+
+  &__select-multiple {
+    padding: 0.55rem;
+    font-size: 0.85rem;
+    background-color: colors.$primary-white;
+    color: colors.$secondary-slate;
+    cursor: pointer;
+    height: auto;
+  }
+  &__field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+}
+
+
+
+.checkbox{
+  &__create{
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__text{
+    padding: 1rem;
+    font-family: fonts.$primary-font-heading;
+    color: colors.$secondary-slate;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

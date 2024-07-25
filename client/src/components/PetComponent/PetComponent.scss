@@ -1,0 +1,50 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+@use "../../styles/partials/_custom";
+
+
+
+  
+
+  body{
+    margin-top:20px;
+    }
+    
+    /* CONTACTS */
+    .contact-box {
+ 
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .contact-box.center-version {
+      padding: 0;
+    }
+    .contact-box.center-version > a {
+      display: block;
+      padding: 20px;
+      text-align: center;
+    }
+    .contact-box.center-version > a img {
+      width: 80px;
+      height: 80px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .contact-box.center-version address {
+      margin-bottom: 0;
+    }
+    .contact-box .contact-box-footer {
+      text-align: center;
+      padding: 15px 20px;
+    }
+    a{
+        text-decoration:none !important;    
+    }
+
+  .btn{
+    @mixin booking-button{
+      
+    }
+  }

@@ -1,0 +1,85 @@
+@use "./styles/partials/mixins";
+@use "./styles/partials/colors";
+@use './styles/partials/fonts';
+@use './styles/partials/custom';
+@use './styles/partials/buttons';
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+:root,
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+zilly-form{
+  @include mixins.tablet {
+    width: 60%;
+}
+@include mixins.desktop {
+  width: 50%;
+}
+@include mixins.xxlarge{
+  width: 50%;
+}
+}
+
+
+pet-form{
+  @include mixins.tablet {
+    width: 40%;
+}
+@include mixins.desktop {
+  width: 30%;
+}
+@include mixins.xxlarge{
+  width: 25%;
+}
+}
+
+
+
+.btn-custom{
+
+--bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bs-secondary);
+  --bs-btn-border-color: var(--bs-white);
+  --bs-btn-hover-color: var(--bs-secondary);
+  --bs-btn-hover-bg: var(--bs-white);
+  --bs-btn-hover-border-color: var(--bs-white);
+  --bs-btn-focus-shadow-rgb: -1px -1px 0 rgba(0, 0, 0, 0.1);
+  --bs-btn-active-color: var(--bs-secondary);
+  --bs-btn-active-bg: var(--bs-white);
+  --bs-btn-active-border-color: (--bs-btn-hover-color);
+  --background-image: none;
+  --bs-btn-border-width: 2px;
+}
+
+$primary-text-emphasis: var(--bs-primary-text-emphasis);
+$secondary-text-emphasis: var(--bs-secondary-text-emphasis);
+$success-text-emphasis: var(--bs-success-text-emphasis);
+$info-text-emphasis: var(--bs-info-text-emphasis);
+$warning-text-emphasis: var(--bs-warning-text-emphasis);
+$danger-text-emphasis: var(--bs-danger-text-emphasis);
+$light-text-emphasis: var(--bs-light-text-emphasis);
+$dark-text-emphasis: var(--bs-dark-text-emphasis);
+
+
+$theme-colors-text: (
+  "primary": $primary-text-emphasis,
+  "secondary": $secondary-text-emphasis,
+  "success": $success-text-emphasis,
+  "info": $info-text-emphasis,
+  "warning": $warning-text-emphasis,
+  "danger": $danger-text-emphasis,
+  "light": $light-text-emphasis,
+  "dark": $dark-text-emphasis,
+);

@@ -1,0 +1,25 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+
+.update-password{
+    font-family: fonts.$primary-font-heading;
+    color: colors.$secondary-slate;
+    &__form{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width:100%;
+        @include mixins.tablet{
+            padding: 10rem;
+            width: 50%;
+        }
+    }
+   &__button{
+    @include mixins.booking-button;
+    align-self: center;
+    margin: 1rem;
+   }
+}
+
+

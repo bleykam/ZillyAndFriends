@@ -1,0 +1,213 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins";
+@use "../../styles/partials/fonts";
+
+.services {
+  padding: 1rem;
+  font-family: fonts.$primary-font-heading;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mixins.desktop {
+    padding: 2rem;
+  }
+  &__button {
+    width: 100%;
+    @include mixins.booking-button;
+    margin: 1rem 0;
+    height: 7vh;
+  }
+  &__cards {
+    @include mixins.tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @include mixins.xxlarge{
+      width: 90%;
+    }
+  
+  }
+}
+
+.sample-card {
+
+  &__desc-item::marker {
+    content: "🐾";
+  }
+  &__desc-list {
+    margin-top: 1rem;
+    padding: 1rem;
+    @include mixins.tablet {
+      margin-top: 0;
+      padding: 1rem;
+    }
+  }
+  &__desc-list &__desc-item {
+    margin-bottom: .25rem; /* Adjust the value to control the space between bullet points */
+  }
+  &__desc-item {
+    margin-left: 2rem;
+    padding: 0 1rem;
+    font-size: 1.25rem;
+    font-family: "Atma";
+    font-weight: 500;
+    line-height: 1.75;
+    padding-left: 1rem;
+    @include mixins.tablet {
+      line-height: 1.5;
+      font-size: .9rem;
+    }
+    @include mixins.xlarge {
+      line-height: 1.75;
+      font-size: 1rem;
+    }
+    @include mixins.xxlarge {
+      line-height: 1.75;
+      font-size: 1.15rem;
+    }
+  }
+}
+
+.sample-card-left {
+  color: colors.$secondary-text;
+  box-shadow: 0px 9px 20px rgba(13, 38, 76, 0.19);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  @include mixins.tablet {
+    width: 70%;
+    padding: 1.5rem;
+    margin: 0.5rem;
+  }
+  @include mixins.xxlarge{
+    justify-content: center;
+  }
+  &__title {
+    align-self: center;
+    width: 100%;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: colors.$medium-blue;
+    box-shadow:
+      0px 2px 4px rgba(0, 0, 0, 0.4),
+      0px 7px 13px -3px rgba(0, 0, 0, 0.3),
+      inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    @include mixins.tablet {
+      text-shadow:
+        3px 2px 0px colors.$primary-white,
+        5px 4px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: none;
+      padding:0;
+    }
+  }
+}
+
+.sample-card-right {
+  box-shadow: 0px 9px 20px rgba(13, 38, 76, 0.19);
+  color: colors.$secondary-text;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  @include mixins.tablet {
+    width: 70%;
+    padding: 1.5rem;
+    margin: 0.5rem;
+  }
+  @include mixins.xxlarge{
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    color: colors.$medium-blue;
+    box-shadow:
+      0px 2px 4px rgba(0, 0, 0, 0.4),
+      0px 7px 13px -3px rgba(0, 0, 0, 0.3),
+      inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    @include mixins.tablet {
+      text-shadow:
+        3px 2px 0px colors.$primary-white,
+        5px 4px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: none;
+      padding: 0;
+
+    }
+  }
+}
+
+.section {
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mixins.tablet {
+      justify-content: space-around;
+      flex-direction: row;
+      width:100%;
+    }
+    @include mixins.xxlarge {
+     justify-content: space-evenly;
+      flex-direction: row;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    @include mixins.tablet {
+      flex-direction: row;
+      justify-content: space-around;
+      width:100%;
+    }
+  }
+
+  &__image-div {
+    @include mixins.tablet {
+    margin: 0.5rem 2rem;
+    width:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    @include mixins.xxlarge{
+      width:auto;
+    }
+  }
+
+  &__image-div-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    @include mixins.tablet {
+      display: None;
+    }
+  }
+  &__image {
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+    @include mixins.tablet {
+      // width: 100%;
+      // object-fit: contain;
+      
+      box-shadow:
+        0px 2px 4px rgba(0, 0, 0, 0.4),
+        0px 7px 13px -3px rgba(0, 0, 0, 0.3),
+        inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+    }
+    @include mixins.xxlarge {
+   
+    //   width: auto;
+    //  object-fit: cover;
+
+
+    }
+  }
+}

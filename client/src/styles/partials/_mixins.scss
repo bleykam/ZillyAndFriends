@@ -1,0 +1,140 @@
+@import "./colors";
+
+
+// Breakpoints(the given screen size or larger)
+@mixin small {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin xlarge {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin xxlarge {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin request-button{
+
+  background: linear-gradient(to bottom right, $secondary-blue, $primary-green);
+  border: 0;
+  border-radius: 0.75rem;
+  color: $primary-white;
+  cursor: pointer;
+  display: inline-block;
+  outline: transparent;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 2.5;
+  padding: 0 1rem;
+
+  &:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(64, 231, 139, 0.5), .125rem .125rem 1rem rgba(60, 202, 245, 0.5);
+  }
+
+
+  &:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(31, 219, 188, 0.5), .125rem .125rem 1rem rgba(26, 203, 235, 0.5);
+  }
+  @include tablet{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2.5;
+    padding: 0 1rem;
+
+
+  }
+}
+
+@mixin booking-button{
+  font-family: "Yusei Magic";
+  background:  linear-gradient(to bottom right, #00b2caff, #70B9C6);
+  border: 0;
+  border-radius: 0.25rem;
+  color: $primary-white;
+  cursor: pointer;
+  display: inline-block;
+  outline: transparent;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2;
+  padding: 0 0.5rem;
+
+  &:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(64, 231, 139, 0.5), .125rem .125rem 1rem rgba(60, 202, 245, 0.5);
+  }
+
+
+  &:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(31, 219, 188, 0.5), .125rem .125rem 1rem rgba(26, 203, 235, 0.5);
+  }
+  @include tablet{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2;
+    padding: 0 .75rem;
+
+
+  }
+}
+
+@mixin input {
+  border: 1px solid $primary-input-border;
+  border-radius: 0.25rem;
+  color: $secondary-slate;
+  height: 2.5rem;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.2);
+  @include tablet {
+    padding: 1rem;
+    height: 2rem;
+  }
+}
+
+@mixin label{
+    color: $primary-label;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    @include tablet {
+      margin-top: 1rem;
+    }
+}
+
